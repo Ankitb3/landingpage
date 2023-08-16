@@ -1,0 +1,29 @@
+/* Navbar css */
+.Main_logo{
+    position: relative;
+    right: 19.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Navbar_Hamburger{
+    display: none;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 800px) { 
+    .Navbar_Hamburger{
+        display: block;
+    }
+    .Main_logo{
+        left: -8rem;
+    }
+    .nav-items a{
+        display: none;
+    }
+ }
