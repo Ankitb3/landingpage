@@ -143,3 +143,23 @@ a{
 .items h3{
     font-weight: 200;
 }
+
+
+
+/* Product */
+.main-product{
+    height: 70vh;
+   margin-top: 10rem;
+}
+p{
+    color: #657798;
+}
+.product-item{
+    padding: 20px;
+}
+.product-item:hover{
+    -webkit-box-shadow: 11px -7px 10px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px -7px 10px -7px rgba(0,0,0,0.75);
+box-shadow: 11px -7px 10px -7px rgba(0,0,0,0.75);
+cursor: pointer;
+}
