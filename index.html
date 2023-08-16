@@ -1,74 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="./Assets/mainlogo.png">
     <title>Home-Technologies pvt. ltd.</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.0/dist/css/splide.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+
 <body>
 
-<!-- Navbar section -->
-<nav class="navbar  border-bottom fixed-top container">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-5 ms-5 text-white">Tekdi</a>
-        <img src="./Assets/mainlogo.png" alt="mainlogo" class="Main_logo">
-        <div class="d-flex gap-4 text-white nav-items">
-            <a>Your Next</a>
-            <a>Industries</a>
-            <a>Capabilites</a>
-            <a>Success Stories</a>
+    <!-- Navbar section -->
+    <nav class="navbar  border-bottom fixed-top container">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-5 ms-5 text-white">Tekdi</a>
+            <img src="./Assets/mainlogo.png" alt="mainlogo" class="Main_logo">
+            <div class="d-flex gap-4 text-white nav-items">
+                <a>Your Next</a>
+                <a>Industries</a>
+                <a>Capabilites</a>
+                <a>Success Stories</a>
+
+            </div>
+            <div class="Navbar_Hamburger">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <div class="Navbar_Hamburger">
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
+    </nav>
+
+
+    <!-- HeroSection -->
+    <div class="Hero-main">
+        <h2 class="text-white fs-1 Hero-para">CATALYSE.DIGITAL.<br />TRANSFORMATION</h2>
     </div>
 
-    </div>
-  </nav>
-    
 
-  <!-- HeroSection -->
-  <div class="Hero-main">
-    <h2 class="text-white fs-1 Hero-para">CATALYSE.DIGITAL.<br/>TRANSFORMATION</h2>
-  </div>
+    <!-- Digital info section -->
+    <div class="main-digital">
+        <div>
+            <h2 class="digital-t">Digital Transformation</h2>
+            <p class="fs-4 digital-t">Digital transformation solutions that continuously<br /> transform your business
+                model giving you the edge to</br> compete, differentiate and lead your business.</p>
+        </div>
+
+        <!-- Swipper code  -->
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="d-flex main-slider justify-content-evenly">
+                            <div class="d-flex ">
+                                <img class="sliderimg" src="https://www.tekdi.net/static/bfb1d5859da59cfc8fa9fc37767a813e/b7862/content-publishing.png
+                        " alt="Slide 1" />
+                                <span class="fs-5 mt-5 p-5">Content publishing<p style="width: 300px;">The digital boom
+                                        of media is driven by a combination of trends and innovations. Navigating
+                                        content and media across different chan...
+
+                                    <h4 class="view-more">View More</h4>
+                                    </p>
+                                </span>
+
+
+                            </div>
+                            <div class="d-flex">
+                                <img class="sliderimg" src="https://www.tekdi.net/static/56b24fb40aa25305ad4e28e130e7945d/b7862/ecommerce.png
+                   " alt="Slide 1" />
+                                <span class="fs-5 mt-5 p-5">Content publishing<p style="width: 300px;">The digital boom
+                                        of media is driven by a combination of trends and innovations. Navigating
+                                        content and media across different chan...
+
+                                    <h4 class="view-more">View More</h4>
+                                    </p>
+                                </span>
+
+
+                            </div>
+
+
+                    </li>
+                    <li class="splide__slide">
+                        <div class="d-flex justify-content-evenly">
+                            <div class="d-flex">
+                                <img class="sliderimg" src="https://www.tekdi.net/static/bfb1d5859da59cfc8fa9fc37767a813e/b7862/content-publishing.png
+                   " alt="Slide 1" />
+                                <span class="fs-5 mt-5 p-5">Content publishing<p style="width: 300px;">The digital boom
+                                        of media is driven by a combination of trends and innovations. Navigating
+                                        content and media across different chan...
+
+                                    </p>
+                                    <h4 class="view-more">View More</h4>
+                                </span>
+
+
+                            </div>
+                            <div class="d-flex">
+                                <img class="sliderimg" src="https://www.tekdi.net/static/bfb1d5859da59cfc8fa9fc37767a813e/b7862/content-publishing.png
+              " alt="Slide 1" />
+                                <span class="fs-5 mt-5 p-5">Content publishing<p style="width: 300px;">The digital boom
+                                        of media is driven by a combination of trends and innovations. Navigating
+                                        content and media across different chan...
+
+                                    <h4 class="view-more">View More</h4>
+                                    </p>
+                                </span>
+
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="d-flex justify-content-evenly">
+                            <div class="d-flex">
+                                <img class="sliderimg" src="	https://www.tekdi.net/static/56b24fb40aa25305ad4e28e130e7945d/b7862/ecommerce.png
+                   " alt="Slide 1" />
+                                <span class="fs-5 mt-5 p-5">Content publishing<p style="width: 300px;">The digital boom
+                                        of media is driven by a combination of trends and innovations. Navigating
+                                        content and media across different chan...
+
+                                    <h4 class="view-more">View More</h4>
+                                    </p>
+                                </span>
+
+
+                            </div>
+                            <div class="d-flex">
+                                <img class="sliderimg" src="		https://www.tekdi.net/static/54d116a9e1e7bf56205f2cbf1fa9f83f/b7862/e-learning.png                           
+              " alt="Slide 1" />
+                                <span class="fs-5 mt-5 p-5">Content publishing<p style="width: 300px;">The digital boom
+                                        of media is driven by a combination of trends and innovations. Navigating
+                                        content and media across different chan...
+
+                                    <h4 class="view-more">View More</h4>
+                                    </p>
+                                </span>
+
+
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('.splide', {
+            type: 'loop',
+            autoplay: true,
+            pagination: true,
+        }).mount();
+    });
+</script>
+
+<script src="./index.js"></script>
+<script src="https://unpkg.com/@splidejs/splide@3.0.0/dist/js/splide.min.js"></script>
+
 </html>
