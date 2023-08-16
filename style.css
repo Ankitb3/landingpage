@@ -111,12 +111,12 @@ a{
 .Item{
     background-color: #09225a;
     padding: 20px;
-    height: 50vh;
+    height: 60vh;
     width: 50%;
     color: white;
     font-weight: 100;
     cursor: pointer;
-    margin: 0.5 px;
+    margin: 0.5px;
 }
 .Item >h3{
     margin-top: 30%;
@@ -133,4 +133,13 @@ a{
         display: block;
     }
    
+}
+
+
+/* industry */
+.industry-para{
+    color: #657798;
+}
+.items h3{
+    font-weight: 200;
 }
