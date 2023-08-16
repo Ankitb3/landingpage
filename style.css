@@ -27,3 +27,21 @@ a{
         display: none;
     }
  }
+
+
+/* Hero-section */
+.Hero-main{
+    overflow-x: hidden;
+    height: 84vh;
+    background: url('https://www.tekdi.net/static/04954892ebf7f0cdbfb89e0bd062e41a/f2cbb/bg-home.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+
+.Hero-para{
+    position: relative;
+    font-weight:450;
+    top: 20rem;
+    left: 10rem;
+    line-height: 44px;
+}
