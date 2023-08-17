@@ -37,6 +37,9 @@ a{
     .box1img{
         width: 450px;
     }
+    .form-input{
+        gap: 10px;
+    }
    
  }
 
@@ -221,4 +224,10 @@ cursor: pointer;
   .box>img:hover{
     filter: grayscale(0%);
     cursor: pointer;
+  }
+
+  textarea{
+    width: 60rem;
+    height: 20vh;
+    padding: 10px;
   }
