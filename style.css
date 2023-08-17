@@ -34,12 +34,26 @@ a{
     .items{
         flex-wrap: wrap;
     }
+   
     .box1img{
-        width: 450px;
+        width: 350px;
+        margin: 10px;
     }
+   
+    .main-digital{
+        height: 40vh;
+    }
+    .Main-splide{
+        display: none;
+    }
+  
     .form-input{
         gap: 10px;
     }
+    .Main_logo{
+        margin-left:80px;
+    }
+ 
    
  }
 
@@ -54,10 +68,10 @@ a{
 }
 
 .Hero-para{
+    padding: 3px;
     position: relative;
     font-weight:450;
     top: 20rem;
-    left: 10rem;
     line-height: 44px;
 }
 
@@ -71,9 +85,6 @@ a{
     color: #657798;
 }
 .digital-t{
-    position: relative;
-    top: 1rem;
-    width: 70%;
     text-align: center;
 }
 
@@ -81,11 +92,8 @@ a{
 .splide {
     width: 100%;
     margin: 0 auto;
-   padding: 10px;
    position: relative;
    bottom: 4rem;
-   display: flex;
-   flex-wrap: wrap;
   }
   
   .splide__slide img {
@@ -226,8 +234,32 @@ cursor: pointer;
     cursor: pointer;
   }
 
+
+  /* form */
+  .form-section{
+    background-image: url('https://www.tekdi.net/static/lets-transform-bg-06ab8de9a71d94a50d42eb9a2187f4b4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
   textarea{
     width: 60rem;
     height: 20vh;
-    padding: 10px;
   }
+
+
+  /* footer */
+  .footer{
+    padding: 10px;
+    background-color: #09225a;
+    color: white;
+  }
+  .footer p{
+    font-size: 20px;
+  }
+
+
+
+  
+
+ 
