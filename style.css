@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Navbar css */
 .Main_logo{
     position: relative;
@@ -28,6 +33,9 @@ a{
     }
     .items{
         flex-wrap: wrap;
+    }
+    .box1img{
+        width: 450px;
     }
    
  }
@@ -93,7 +101,7 @@ a{
     
 }
 .view-more{
-    width: 110px;
+    width: 160px;
     color: #30d6d8;
     font-weight: 300;
     cursor: pointer;
@@ -105,9 +113,7 @@ a{
   
 
 /* Sucess story */
-.main-story{
-    height: 80vh;
-}
+
 .Item{
     background-color: #09225a;
     padding: 20px;
@@ -148,7 +154,6 @@ a{
 
 /* Product */
 .main-product{
-    height: 70vh;
    margin-top: 10rem;
 }
 p{
@@ -163,3 +168,57 @@ p{
 box-shadow: 11px -7px 10px -7px rgba(0,0,0,0.75);
 cursor: pointer;
 }
+
+
+/* join us section */
+/* .Joinus-main div{
+    width: 70%;
+    flex-wrap: wrap;
+}
+.first-sec{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+.parent {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: white;
+    }
+    .second-item{
+      background-color:  #010836;
+      position: relative;
+      right: 10px;
+    }
+
+.third-item{
+    height: 50vh;
+
+  background-color:  #17b1cf;
+}
+.third-item h3{
+    font-weight: 300;
+}
+.fourth-item{
+    height: 50vh;
+    position: relative;
+    right: 10px;
+  background-color:#1271bb;
+}
+
+
+/* brand section */
+
+  .main-brand{
+   height: 50vh;
+  }
+  .box>img{
+    filter: grayscale(100%);
+    cursor: pointer;
+  }
+  .box>img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
